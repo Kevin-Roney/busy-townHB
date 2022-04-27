@@ -6,10 +6,28 @@ import { useState } from 'react';
 function App() {
   // track the following state with a few useState hooks:
   // lightColor should be a string that starts out as 'red'
-  const [lightColor] = useState('red');
+  const [lightColor, setLightColor] = useState('red');
   // lizardSize should be a number that starts out as 10
+  const [lizardSize, setLizardSize] = useState(10);
   // alienSize should be a number that starts out as 10
+  const [alienSize, setAlienSize] = useState(10);
   // traffic is complicated. It should be an array of strings that starts out as ['car', 'truck']
+
+  function handleLizardGrow() {
+    setLizardSize(lizardSize + 1);
+  }
+
+  function handleLizardShrink() {
+    setLizardSize(lizardSize - 1);
+  }
+
+  function handleAlienGrow() {
+    setAlienSize(alienSize + 1);
+  }
+
+  function handleAlienShrink() {
+    setAlineSize(alienSize - 1);
+  }
 
   return (
     <div className="App">
