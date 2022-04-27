@@ -6,7 +6,7 @@ import { useState } from 'react';
 function App() {
   // track the following state with a few useState hooks:
   // lightColor should be a string that starts out as 'red'
-  const [lightColor, setLightColor] = useState('red');
+  const [lightColor] = useState('red');
   // lizardSize should be a number that starts out as 10
   // alienSize should be a number that starts out as 10
   // traffic is complicated. It should be an array of strings that starts out as ['car', 'truck']
