@@ -13,18 +13,19 @@ function App() {
   const [alienSize, setAlienSize] = useState(10);
   // traffic is complicated. It should be an array of strings that starts out as ['car', 'truck']
   const [traffic, setTraffic] = useState(['car', 'truck']);
+  const ATTACK_POWER = 1;
 
   function handleLizardGrow() {
-    setLizardSize(lizardSize + 1);
+    setLizardSize(lizardSize + ATTACK_POWER);
   }
   function handleLizardShrink() {
-    setLizardSize(lizardSize - 1);
+    setLizardSize(lizardSize - ATTACK_POWER);
   }
   function handleAlienGrow() {
-    setAlienSize(alienSize + 1);
+    setAlienSize(alienSize + ATTACK_POWER);
   }
   function handleAlienShrink() {
-    setAlienSize(alienSize - 1);
+    setAlienSize(alienSize - ATTACK_POWER);
   }
 
   function handleAddCar() {
